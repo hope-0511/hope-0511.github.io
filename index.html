@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 Solar Terms / 二十四节气</title>
+    <style>
+        body {
+            background-color: #e6f7ff;
+            font-family: '微软雅黑', sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 240, 0.9);
+            border: 3px solid #fffacd;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .bilingual-title {
+            color: #4682b4;
+            border-bottom: 2px solid #fffacd;
+            padding-bottom: 10px;
+        }
+
+        .content-card {
+            padding: 20px;
+            margin: 15px 0;
+            background: white;
+            border-left: 5px solid #fffacd;
+            transition: transform 0.3s;
+        }
+
+        .content-card:hover {
+            transform: translateX(10px);
+        }
+
+        .term-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8ffe6;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .term-card:hover {
+            background: #fffacd;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        .english-text {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-card">
+            <h1 class="bilingual-title">24 Solar Terms<br><span style="font-size:0.8em">二十四节气</span></h1>
+            <p>The 24 Solar Terms are a Chinese calendar system reflecting seasonal changes.<br>
+            <span class="english-text">(中国传统历法反映季节变化的时间体系)</span></p>
+            
+            <button class="term-card" onclick="window.location.href='hanlu.html'">
+                <div>
+                    <h3>寒露 Cold Dew</h3>
+                    <p class="english-text">When temperature drops and dew forms</p>
+                </div>
+                <div>→</div>
+            </button>
+
+            <button class="term-card" onclick="window.location.href='lixia.html'">
+                <div>
+                    <h3>立夏 Start of Summer</h3>
+                    <p class="english-text">The beginning of summer season</p>
+                </div>
+                <div>→</div>
+            </button>
+        </div>
+
+        <div class="content-card">
+            <h2 class="bilingual-title">About / 简介</h2>
+            <p>This website introduces traditional Chinese solar terms.<br>
+            <span class="english-text">(本网站介绍中国传统二十四节气)</span></p>
+            
+            <div style="margin-top:20px; text-align:center">
+                <img src="image.jpg" 
+                     alt="Solar Terms Illustration"
+                     style="width:100%; border-radius:8px; margin:10px 0">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
